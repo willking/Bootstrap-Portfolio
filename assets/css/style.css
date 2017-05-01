@@ -1,11 +1,14 @@
 body {
 	display: block;
 	height: 100%;
-/*	background-image: url(../../assets/images/pixel_weave.png);*/
 	background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/hexabump.png");
 	background-repeat: repeat;
 	background-position: center;
 	background-attachment: fixed;
+}
+
+section {
+	margin-top: 45px;
 }
 
 p {
@@ -34,7 +37,7 @@ h1 {
 }
 
 .navbar-default {
-	padding: 15px 0px;
+	/*padding: 15px 0px;*/
 	font-family: 'Baloo', cursive;
 	font-size: 150%;
 }
@@ -51,19 +54,6 @@ a.padding {
 .container {
 	max-width: 960px;
 	height: 100%;
-}
-
-/* Header row */
-.col-md-12 {
-	margin-bottom: 5%;
-}
-
-.col-sm-12 {
-	margin-bottom: 5%;
-}
-
-.col-xs-12 {
-	margin-bottom: 5%;
 }
 
 /* Middle grid */
@@ -131,5 +121,22 @@ h2 {
 /* Footer */
 .footer {
 	background-color: #f8f8f8;
-	padding: 15px 0px;
+/*	padding: 15px 0px;*/
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+	section {
+		margin-top: 4%;
+	}
+	.row {
+		position:relative;
+		clear:both;
+	}
+}
+
+@media (max-width: 768px) {
+	section {
+		margin-top: 5%;
+	}
 }
