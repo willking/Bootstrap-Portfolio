@@ -27,6 +27,11 @@ h1 {
 	font-family: 'Baloo', cursive;
 }
 
+.header {
+	padding-left: 15px;
+	padding-right: 0px;
+}
+
 .navbar-brand {
 	background-color: #ffe047;
 	font-family: 'Baloo', cursive;
@@ -34,6 +39,16 @@ h1 {
 	text-align: center;
 	font-weight: bold;
 	color: white !important;
+}
+
+.navbar-inverse {
+	background-color: #f8f8f8;
+	border-color: none;
+	font-size: 115%;
+}
+
+.navbar-collapse {
+	padding-right: 0px;
 }
 
 .navbar-default {
@@ -44,6 +59,10 @@ h1 {
 
 .navbar {
 	margin-bottom: 0px;
+}
+
+.navbar-toggle {
+	background-color: #ffe047;
 }
 
 a.padding {
@@ -118,6 +137,12 @@ h2 {
 	margin-bottom: 5%;
 }
 
+/* Portfolio */
+img.port-img {
+	max-width: 290px;
+	height: 184px;
+}
+
 /* Footer */
 .footer {
 	background-color: #f8f8f8;
@@ -129,14 +154,29 @@ h2 {
 	section {
 		margin-top: 4%;
 	}
+
 	.row {
 		position:relative;
 		clear:both;
+	}
+
+	img.port-img {
+		max-width: 406px;
+    	height: 245px;
 	}
 }
 
 @media (max-width: 768px) {
 	section {
 		margin-top: 5%;
+	}
+
+	.header {
+		padding-right: 15px;
+	}
+
+	img.port-img {
+		width: 100%;
+    	height: 100%;
 	}
 }
