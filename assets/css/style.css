@@ -148,16 +148,37 @@ img.port-img {
 	height: 184px;
 }
 
-.image-text {
-	
-	position: absolute;
-	bottom: 15%;
-	text-align: center;
-	width: 100%;
-	max-width: 290px;
-	font-size: 150%;
-	font-weight: bold;
-	background-color: #ffe047;
+.work {
+  position: relative;
+  float: left;
+  width: 274px;
+  margin: 15px 0 15px;
+  overflow: auto;
+}
+
+.work:nth-child(even) {
+  margin-right: 40px;
+}
+
+.work img {
+  width: 100%;
+  border: 0 none;
+  opacity: 0.8;
+}
+
+.work h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 4px;
+  margin-bottom: 0;
+  font-weight: 500;
+  line-height: 30px;
+  font-size: 125%;
+  color: black;
+  text-align: center;
+  background: #ffe047;
+  border-bottom: 0;
 }
 
 /* Footer */
@@ -168,77 +189,20 @@ img.port-img {
 
 /* Media Queries */
 @media  screen and (max-width: 991px) {
-	section {
-		margin-top: 4%;
+	.work {
+		 width: 100%;
+		 max-width: 100%;
+		 height: 100%;
 	}
 
-	.row {
-		position:relative;
-		clear:both;
-	}
-
-	img.port-img {
-		max-width: 406px;
-    	height: 245px;
-	}
-
-	.image-text {
-		max-width: 406px;
+	.work img {
+		max-width: 100%;
+		height: 100%;
 	}
 }
 
 @media screen and (max-width: 768px) {
-	section {
-		margin-top: 5%;
-	}
-
-	.header {
-		padding-right: 15px;
-	}
-
-	img.port-img {
-		width: 100%;
-		max-width: 100%;
-		height: 100%;
-	}
-
-	.image-text {
-		width: 100%;
-		max-width: 98%;
-	}
-}
-
-/* iPhone 6 Plus */
-@media screen and (max-width: 414px) {
-	.image-text {
-		width: 93%;
-	}
-}
-
-/* Nexus 6P */
-@media screen and (max-width: 412px) {
-	.image-text {
-		width: 93%;
-	}
-}
-
-/* iPhone 6 */
-@media screen and (max-width: 375px) {
-	.image-text {
-		width: 92%;
-	}
-}
-
-/* Nexus 5X */
-@media screen and (max-width: 360px) {
-	.image-text {
-		width: 92%;
-	}
-}
-
-/* iPhone 5 */
-@media screen and (max-width: 320px) {
-	.image-text {
-		width: 91%;
+		.container {
+		margin: 0 4%;
 	}
 }
